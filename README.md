@@ -2,7 +2,7 @@
 NodeJS, ExpressJS , MySQL - RESTful API // adicionar manipular frases e seus autores CRUD
 
 # Installation #
-
+s
 npm install
 
 # Start API #
