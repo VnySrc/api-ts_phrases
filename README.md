@@ -13,11 +13,11 @@ npm run start-dev
 <hr />
 <br />
 
-### ping to api / test availability ###
+### Ping to api / test availability ###
 GET - 127.0.0.1:3000/ping
 <br /> <br /> 
 
-### lists all phrases stored in the database ###
+### Lists all phrases stored in the database ###
 GET - 127.0.0.1:3000/phrases
 <br /> <br /> 
 
