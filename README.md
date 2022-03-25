@@ -5,10 +5,6 @@ NodeJS, ExpressJS , MySQL - RESTful API // adicionar manipular frases e seus aut
 
 npm install
 
-### ping to api / test availability ###
-127.0.0.1:3000/ping
-<br /> 
-
 # Start API #
 
 npm run start-dev
@@ -17,13 +13,17 @@ npm run start-dev
 <hr />
 <br />
 
+### ping to api / test availability ###
+127.0.0.1:3000/ping
+<br /> <br /> 
+
 ### lists all phrases stored in the database ###
 127.0.0.1:3000/phrases
-<br /> 
+<br /> <br /> 
 
 ### Get a specific phrase from the database by id ###
 GET - 127.0.0.1:3000/name/anyName
-<br /> 
+<br /> <br /> 
 
 ### Create a new sentence in the database ###
 POST - 127.0.0.1:3000/phrases/newphrase
