@@ -14,11 +14,11 @@ npm run start-dev
 <br />
 
 ### ping to api / test availability ###
-127.0.0.1:3000/ping
+GET - 127.0.0.1:3000/ping
 <br /> <br /> 
 
 ### lists all phrases stored in the database ###
-127.0.0.1:3000/phrases
+GET - 127.0.0.1:3000/phrases
 <br /> <br /> 
 
 ### Get a specific phrase from the database by id ###
