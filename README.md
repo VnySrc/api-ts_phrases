@@ -1,5 +1,5 @@
 # api-ts_phrases
-NodeJS, ExpressJS , MySQL - RESTful API // adicionar manipular frases e seus autores CRUD
+NodeJS, ExpressJS , MySQL - RESTful API // adicionar manipular frases e seus autores CRUD / MVC
 
 # Installation #
 
