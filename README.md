@@ -5,7 +5,7 @@ NodeJS, ExpressJS , MySQL - RESTful API // adicionar manipular frases e seus aut
 
 npm install
 
-# Start API #s
+# Start API #
 
 npm run start-dev
 
