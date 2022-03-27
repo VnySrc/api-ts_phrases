@@ -24,10 +24,12 @@ server.use((req: Request, res: Response) => {
 const errorHandler:ErrorRequestHandler = (err, req, res, next) => {
     if(err instanceof MulterError) {
         console.log(err)
+        res.status(400)
         res.json({error:`Houve um erro: ${err.code}`})
     }
     else {
         console.log(err)
+        res.status(400)
         res.json({error:`Houve um erro: ${err.code}`})
     }
 }
