@@ -1,14 +1,24 @@
 import {Request, Response} from "express"
+import sharp from "sharp"
+import {unlink} from "fs/promises"
 
-export const uploadFile = (req: Request, res: Response) => {
+export const uploadFile = async (req: Request, res: Response) => {
+
     if (req.file) {
-    const perfil = req.file;
-    console.log(perfil)
+    const filename = req.file.filename +"."+ req.file.mimetype.split("/")[1]
 
-    res.json({})
+    await sharp(req.file.path)
+    .resize(350, 350, {fit: sharp.fit.fill})
+    .toFormat("png")
+    .toFile(`./public/media/${filename}`)
+
+    res.json({image: filename}) //split separa as frases de acordo com o elemento selecionado
+    
+    unlink(req.file.path)
     }
+
     else{
     res.status(400)
-    res.json({})
+    res.json({error: "Arquivo invalido"})
     }
 }

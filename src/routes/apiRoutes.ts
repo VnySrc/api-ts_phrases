@@ -12,7 +12,7 @@ const router = Router()
 //regras de armazenamento
 const storage = multer.diskStorage({
     filename: (req, file, cb) => {
-        cb(null, file.fieldname + Date.now() + ".png")
+        cb(null, file.fieldname + Date.now())
     },
 
     destination: (req, file, cb) => {
